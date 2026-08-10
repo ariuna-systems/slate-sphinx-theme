@@ -2,7 +2,7 @@
 
 [![Deploy example docs to GitHub Pages](https://github.com/ariuna-systems/slate-sphinx/actions/workflows/pages.yml/badge.svg)](https://github.com/ariuna-systems/slate-sphinx/actions/workflows/pages.yml)
 
-Sphinx theme package for documentation sites.
+Sphinx theme for documentation sites.
 
 ## Usage
 
@@ -26,6 +26,22 @@ Install the package locally from a source checkout:
 ```shell
 uv pip install .
 ```
+
+## Build The Example Site
+
+Generate the HTML output for the bundled example docs:
+
+```shell
+uv run sphinx-build -E -a example/docs example/docs/_build/html
+```
+
+If your environment does not already have docs dependencies, install them first:
+
+```shell
+uv pip install -e . sphinx sphinx-autobuild sphinx-autodoc-typehints myst-parser myst-nb
+```
+
+The generated site will be available in `example/docs/_build/html`.
 
 ## References
 

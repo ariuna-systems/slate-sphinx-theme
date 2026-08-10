@@ -5,7 +5,7 @@ This is a :mod:`package.module1.module2` documentation example.
 
 def example(argument1: int, argument2: float) -> None:
     """The function documentation example.
-    
+
     :param argument1: The first arguement.
     :param argument2: The second arguement.
 

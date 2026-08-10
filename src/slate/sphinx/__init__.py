@@ -7,7 +7,7 @@ See http://www.sphinx-doc.org/en/stable/theming.html#distribute-your-theme-as-a-
 from pathlib import Path
 
 
-__version__ = "0.5.0"
+__version__ = "0.6.0"
 
 
 def setup(app) -> dict[str, bool]:

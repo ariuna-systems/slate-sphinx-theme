@@ -243,11 +243,68 @@ samp {
   margin: 0;
 }
 
+.slate-nav li.is-collapsible {
+  position: relative;
+}
+
+.slate-nav li.is-collapsible > a {
+  padding-right: 2rem;
+}
+
+.slate-nav__toggle {
+  position: absolute;
+  top: 0.38rem;
+  right: 0.35rem;
+  width: 1.3rem;
+  height: 1.3rem;
+  border: 0;
+  padding: 0;
+  border-radius: var(--slate-control-radius);
+  background: transparent;
+  color: var(--slate-color-text-muted);
+  cursor: pointer;
+}
+
+.slate-nav__toggle:hover {
+  background: var(--slate-color-hover);
+  color: var(--slate-color-text-secondary);
+}
+
+.slate-nav__toggle:focus-visible {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 2px var(--slate-color-focus-ring);
+}
+
+.slate-nav__toggle::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-right: 1.5px solid currentColor;
+  border-bottom: 1.5px solid currentColor;
+  transform: rotate(-45deg);
+  transition: transform 0.12s ease;
+}
+
+.slate-nav li.is-collapsible.is-expanded > .slate-nav__toggle::before {
+  transform: rotate(45deg);
+}
+
 .slate-nav li ul {
   margin-top: var(--slate-space-1);
   margin-left: var(--slate-space-3);
   padding-left: var(--slate-space-2);
   border-left: 1px solid var(--slate-color-border);
+}
+
+.slate-nav li.is-collapsible > ul {
+  display: none;
+}
+
+.slate-nav li.is-collapsible.is-expanded > ul {
+  display: block;
 }
 
 .slate-nav a,

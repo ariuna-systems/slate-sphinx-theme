@@ -67,6 +67,7 @@
                 }
             })();
         </script>
+        {%- block extrahead %} {% endblock %}
     </head>
 
     <body class="slate-docs-body page-{{ pagename|replace('/', '-') }}">
@@ -177,7 +178,9 @@
             </div>
         </div>
 
+        {%- block scripts %}
         {{ script() }}
+        {%- endblock %}
     </body>
 
     </html>
