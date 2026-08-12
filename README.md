@@ -11,7 +11,7 @@ Sphinx theme for documentation sites.
 Install the theme directly from GitHub:
 
 ```shell
-uv pip install "git+https://github.com/ariuna-systems/slate-sphinx.git"
+uv pip install "git+https://github.com/ariuna-systems/slate-sphinx-theme.git"
 ```
 
 Then in your Sphinx project's `conf.py`:
