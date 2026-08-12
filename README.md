@@ -1,6 +1,8 @@
 # Slate Sphinx Theme
 
-[![Deploy example docs to GitHub Pages](https://github.com/ariuna-systems/slate-sphinx/actions/workflows/pages.yml/badge.svg)](https://github.com/ariuna-systems/slate-sphinx/actions/workflows/pages.yml)
+[![GitHub Pages](https://github.com/ariuna-systems/slate-sphinx/actions/workflows/pages.yml/badge.svg)](https://github.com/ariuna-systems/slate-sphinx/actions/workflows/pages.yml)
+![version](https://img.shields.io/badge/version-0.6.0-blue.svg)
+![language](https://img.shields.io/badge/language-Python-blue.svg)
 
 Sphinx theme for documentation sites.
 
